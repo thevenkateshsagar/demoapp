@@ -1,6 +1,8 @@
 name: Hello World
 
-on: [push]
+on:
+  push:            # Runs on git push
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   say-hello:
